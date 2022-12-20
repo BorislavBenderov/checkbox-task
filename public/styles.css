@@ -19,3 +19,25 @@ label {
     display: flex;
     align-items: center;
 }
+
+.result {
+    width: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+.checkboxes {
+    margin-left: 20px;
+}
+
+.checkbox__group {
+    display: flex;
+}
+
+.checkbox__group label {
+    margin-left: 10px;
+}
+
+.checkbox__img {
+    margin-right: 10px;
+}
