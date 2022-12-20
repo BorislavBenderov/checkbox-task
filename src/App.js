@@ -8,9 +8,14 @@ function App() {
   useEffect(() => {
     setData(checkboxes);
   }, []);
+
+  const onEdit = () => {
+    console.log('clicked');
+  }
+
   return (
     <div className="App">
-      {checkboxes.map(checkbox => <Checkbox key={checkbox.id} checkbox={checkbox}/>)}
+      {checkboxes.map(checkbox => <Checkbox key={checkbox.id} checkbox={checkbox} onEdit={onEdit}/>)}
     </div>
   );
 }
