@@ -14,9 +14,30 @@ function App() {
     setData(checkboxes);
   }, []);
 
-  const onEdit = () => {
-    console.log('clicked');
-  }
+  const onEdit = (id) => {
+    const editedCheckbox = data.find(x => x.id === id);
+    editedCheckbox.checked = !editedCheckbox.checked;
+
+    if (editedCheckbox.checked) {
+      checkboxRef.current.indeterminate = true;
+      setChecked(true);
+    }
+
+    if (data.every(x => x.checked === true)) {
+      checkboxRef.current.disabled = true;
+      setIsAllChecked(true);
+    } else {
+      checkboxRef.current.disabled = false;
+      setIsAllChecked(false);
+    }
+
+    if (data.every(x => x.checked === false)) {
+      checkboxRef.current.indeterminate = false;
+      setChecked(false);
+    }
+
+    setData((oldState) => oldState.map(x => x.id === id ? editedCheckbox : x));
+  };
 
   return (
     <div className="App">
