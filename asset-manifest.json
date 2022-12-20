@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.js": "/checkbox-task/static/js/main.f598b553.js",
+    "static/media/ic_checkbox_checked.svg": "/checkbox-task/static/media/ic_checkbox_checked.745c4d07e39dea45f9d2319c30309ef8.svg",
+    "index.html": "/checkbox-task/index.html",
+    "static/media/ic_checkbox_half.svg": "/checkbox-task/static/media/ic_checkbox_half.1f84c1305e6e4234332fec82a1374b46.svg",
+    "static/media/ic_checkbox_unchecked.svg": "/checkbox-task/static/media/ic_checkbox_unchecked.ec7ac4bcaff76a1e340fb0cc9f35c20a.svg",
+    "main.f598b553.js.map": "/checkbox-task/static/js/main.f598b553.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.f598b553.js"
+  ]
+}
