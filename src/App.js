@@ -1,6 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 import { checkboxes } from "./checkboxes";
 import { Checkbox } from "./components/Checkbox";
+import { Checked } from "./components/Checked";
 import HALFICON from './images/ic_checkbox_half.svg';
 import UNCHECKICON from './images/ic_checkbox_unchecked.svg';
 
@@ -56,6 +57,9 @@ function App() {
           </label>
         </div>
         {checkboxes.map(checkbox => <Checkbox key={checkbox.id} checkbox={checkbox} onEdit={onEdit} />)}
+      </section>
+      <section className="result">
+        {checkboxes.map(checkbox => <Checked key={checkbox.id} checkbox={checkbox} />)}
       </section>
     </div>
   );
