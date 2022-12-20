@@ -6,7 +6,8 @@ export const Checkbox = ({ checkbox, onEdit }) => {
         <div className="checkboxes">
             <label>
                 <img className="checkbox__img" src={checkbox.checked ? CHECKICON : UNCHECKICON} alt="" />
-                <input type="checkbox"
+                <input
+                    type="checkbox"
                     onChange={() => !checkbox.checked}
                     checked={checkbox.checked}
                     onClick={() => onEdit(checkbox.id)}
