@@ -1,4 +1,21 @@
+.checkbox {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+    border: 1px solid rgba(28, 28, 28, 0.251);
+}
+
 img {
     width: 24px;
     height: 24px;
+}
+
+.unchecked {
+    filter: invert(47%) sepia(34%) saturate(12%) hue-rotate(77deg) brightness(100%) contrast(86%);
+}
+
+label {
+    display: flex;
+    align-items: center;
 }
